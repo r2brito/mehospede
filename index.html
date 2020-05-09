@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Hospede</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google Fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,700,800|Roboto:400,500,700"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte Awesome -->
+    <script src="https://kit.fontawesome.com/8f31a3c05c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Topo Contato -->
+            <div class="topbar">
+                <ul class="contato">
+                    <li><i class="fas fa-phone"></i><a href="tel:8801234567">(99)-99999-9999</a></li>
+                    <li><i class="far fa-envelope"></i><a href="mailto:contato@contato.com">contato@contato.com</a></li>
+                </ul>
+            </div>
+            <!-- Menu -->
+            <div class="header_menu">
+                <div class="header__logo">
+                    <a href="#">
+                        <h1 class="screen-reader-text">MeHospede</h1>
+                        <img src="img/logo.png" alt="Me Hospede">
+                    </a>
+                </div>
+
+                <div class="nav-mobile">
+                    <a href="#" class="nav-toggle">
+                        <span></span>
+                    </a>
+                </div>
+
+
+                <nav class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="#">Hospede em sua acomodação</a>
+                        </li>
+                        <li>
+                            <a href="#">Ajuda</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_login">
+                    <a href="#">Entrar</a>
+                    <a href="#" class="btn btn-light">&plus; Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--CARROSEL-->
+
+
+    <section class="main-slider">
+        <main role="main" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/main_slider_1.jpg">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="main-search main-search--absolute">
+            <div class="container">
+                <div class="main-search__container">
+                    <section class="listing-search">
+                        <form id="form-search">
+                            <div class="form-row">
+                                <div class="col-md-4 mb-2">
+                                    <label for="location-search" class="listing-search__label">Localização</label>
+                                    <input type="text" class="form-control" id="location-search"
+                                        placeholder="Para onde você vai?" required>
+                                    <div class="invalid-feedback">
+                                        Selecione uma localização
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="checkin" class="listing-search__label">Check-in</label>
+                                    <input type="date" class="form-control" id="checkin" required>
+                                    <div class="invalid-feedback date-fields">
+                                        Selecione uma data de checkin
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="checkout" class="listing-search__label">Checkout</label>
+                                    <input type="date" class="form-control" id="checkout" required>
+                                    <div class="invalid-feedback date-fields">
+                                        Selecione uma data de checkout
+                                    </div>
+                                </div>
+                                <div class="col div-btn-search">
+                                    <button type="submit" class="btn btn-outline-success"><i
+                                            class="fas fa-search"></i>
+                                        Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+    <section class="lista_locacao">
+        <div class="container">
+            <h2 class="section__title">Locações</h2>
+            <div class="row" id="cards">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 newsletter__content">
+                    <img src="img/icon_mail.png" alt="Newsletter" class="newsletter__icon">
+                    <div class="newsletter__text-content">
+                        <h2 class="newsletter__title">Newsletter</h2>
+                        <p class="newsletter__desc">Receba Novidades e promoções</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <form action="index.html" class="newsletter__form">
+                        <input type="email" class="newsletter__field" placeholder="Insira seu Email">
+                        <button type="submit" class="newsletter__submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-3 footer__links-single">
+                        <h3 class="footer__title">SOBRE</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Diversidade e pertencimento</a></li>
+                            <li><a href="#">Acessibilidade</a></li>
+                            <li><a href="#">Confiança e segurança</a></li>
+                            <li> <a href="#">Airbnb Citizen</a></li>
+                            <li> <a href="#">Newsroom</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 footer__links-single">
+                        <h3 class="footer__title">COMUNIDADE</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Airbnb Magazine</a></li>
+                            <li><a href="#">Airbnb for Work</a></li>
+                            <li><a href="#">Convide amigos</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 footer__links-single">
+                        <h3 class="footer__title">ANFITRIÃO</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Hospede em sua acomodação</a></li>
+                            <li><a href="#">Ofereça uma experiência</a></li>
+                            <li><a href="#">Hospedagem responsável</a></li>
+                            <li><a href="#">Open Homes</a></li>
+                            <li><a href="#">Olimpíadas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 footer__links-single">
+                        <h3 class="footer__title">ATENDIMENTO</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">Atendimento ao Bairro</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="footer__copyright-inner">
+                    <p class="footer__copyright-desc">
+                        &copy; 2020 <span class="footer--highlighted">MeHospede</span>. Projeto de Estudo. Desenvolvido
+                        por <a href="#">Rodrigo Ramos</a>.
+                    </p>
+                    <ul class="footer__social">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/pagination.js"></script>
+    <!-- JS Files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
